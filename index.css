@@ -1,0 +1,331 @@
+.mainApp{
+
+
+z-index: 5;
+
+}
+body{
+    background-color: #F9FAFF;
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.backgroundCurve{
+    
+    
+    
+    width: fit-content;
+    height: 500px;
+    border-radius: 0 0 0 45%;
+    z-index: 1;
+}
+.bubbleImage{
+    background-image: url(./images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.textBanner{
+    
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5%;
+    z-index: 2;
+}
+.underBanner{
+    text-align: center;
+    
+    opacity: 75%;
+    font-size: 15px;
+    z-index: 2;
+}
+.mainCard{
+    max-height: fit-content;
+    max-width: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3%;
+    
+    
+    
+
+}
+.checkList{
+    list-style-type: none;
+}
+.btn{
+    background-color: rgb(57, 64, 129) !important; 
+    color: white !important;
+    float: right;
+}
+.slidecontainer {
+    width: 100%;
+    
+    
+    /* Width of the outside container */
+}
+
+/* The slider itself */
+.priceSlider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 10px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    
+}
+
+/* Mouse-over effects */
+.priceSlider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.priceSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #222222;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.priceSlider::-moz-range-thumb {
+    width: 40px;
+    /* Set a specific slider handle width */
+    height: 40px;
+    /* Slider handle height */
+    background: #10D8C4;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+    background-image: url(./images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 9px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.alert{
+    font-size: 10px;
+    height: 0;
+    width: 10;
+    
+}
+p{
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+li{
+    font-size: 12px;
+    color: gray;
+}
+.grayText{
+    color: gray;
+    font-size: 13px;
+}
+.pageViews{
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15;
+}
+.line {
+    width: fit-content;
+    height: fit-content;
+    border-bottom: .25px solid rgb(212, 212, 212);
+    position: relative;
+}
+.perMonth{
+    color: gray;
+    float: right;
+}
+
+
+
+
+
+
+
+.pricing-slider {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.form-slider span {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.pricing-slider {
+  margin-bottom: 48px;
+}
+
+.pricing-slider {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.pricing-slider input {
+  width: 100%;
+}
+.pricing-slider .pricing-slider-value {
+  position: absolute;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #909cb5;
+  margin-top: 8px;
+  --thumb-size: 36px;
+}
+.pricing-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+.pricing-item {
+  flex-basis: 280px;
+  max-width: 280px;
+  box-sizing: content-box;
+  padding: 12px;
+}
+.pricing-item-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  box-shadow: 0 8px 16px rgba(46, 52, 88, 0.16);
+}
+.pricing-item-title {
+  font-weight: 500;
+}
+.pricing-item-price {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 20px;
+}
+.pricing-item-price-amount {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+  color: #191e2a;
+}
+.pricing-item-features-list {
+  list-style: none;
+  padding: 0;
+}
+.pricing-item-features-list li {
+  margin-bottom: 0;
+  padding: 14px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.pricing-item-features-list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  height: 1px;
+  background: #e9ecf8;
+}
+.pricing-item-features-list li::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%2011h14v2H5z%22%20fill%3D%22%239298B8%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  -webkit-box-ordinal-group: 0;
+  order: -1;
+}
+.pricing-item-features-list li.is-checked::after {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill-rule%3D%22nonzero%22%20fill%3D%22none%22%3E%3Ccircle%20fill%3D%22%2300C2A9%22%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M10.5%2012.267l-2.5-1.6-1%201.066L10.5%2016%2017%209.067%2016%208z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
